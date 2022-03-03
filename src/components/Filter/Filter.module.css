@@ -1,0 +1,17 @@
+.Filter {
+  margin: 15px;
+}
+
+.Filter__input {
+  display: block;
+  margin: 15px;
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
