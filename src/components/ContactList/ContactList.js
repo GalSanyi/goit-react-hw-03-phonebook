@@ -1,17 +1,6 @@
-import { nanoid } from 'nanoid';
+import ContactListItem from '../ContactListItem/ContactListItem';
 import PropTypes from 'prop-types';
-import s from './ContactList.module.css';
 
-const ContactListItem = ({ id, name, number, onRemove }) => {
-  return (
-    <li className={s.Contact__list} id={nanoid()}>
-      {name}:{number}
-      <button className={s.Contact__list__button} onClick={() => onRemove(id)}>
-        delete
-      </button>
-    </li>
-  );
-};
 const ContactList = ({ contacts, onRemove }) => {
   if (contacts.length === 0) return null;
   return (
